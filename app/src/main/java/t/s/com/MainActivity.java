@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.one,R.id.two})
+    @OnClick({R.id.one,R.id.two,R.id.three})
     void onclick(View v){
         switch (v.getId()){
             case R.id.one:
@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.two:
                 startActivity(new Intent(MainActivity.this,DesignActivity.class));
                 break;
+            case R.id.three:
+                startActivity(new Intent(MainActivity.this,DesignActivity.class));
+                break;
+
         }
     }
 

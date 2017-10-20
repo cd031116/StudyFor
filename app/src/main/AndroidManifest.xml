@@ -16,10 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".desgin.DesignActivity"/>
-        <activity android:name=".desgin.DrawerLayoutActivity"/>
-
-
+        <activity android:name=".desgin.DesignActivity" />
+        <activity android:name=".desgin.DrawerLayoutActivity" />
+        <activity android:name=".desgin.ScrollviewXuanFuActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <!--自定义的头部-->
+    <include layout="@layout/main_search" />
+
+    <t.s.com.wogdet.MyScroview
+        android:id="@+id/myscroview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_search"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            android:paddingBottom="30px">
+            <!--悬浮栏以上的部分-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="#ffffff">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/mian_top_item" />
+
+
+            <LinearLayout
+                android:id="@+id/main_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <include layout="@layout/team_tab_detail" />
+            </LinearLayout>
+            <!--悬浮栏以下的部分-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="42px">
+
+                <TextView
+                    android:layout_width="8px"
+                    android:layout_height="49px"
+                    android:background="#59C2DE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="安全须知"
+                    android:textColor="#333333"
+                    android:textSize="40px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/text"
+                android:textColor="#333333" />
+
+
+        </LinearLayout>
+
+
+    </t.s.com.wogdet.MyScroview>
+
+
+    <LinearLayout
+        android:id="@+id/main_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@+id/main_search"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>
