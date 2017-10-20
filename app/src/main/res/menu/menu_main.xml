@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@mipmap/search_bg"
+        android:title="查找"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_share"
+        android:title="分享"
+        android:icon="@mipmap/ic_overflow"
+        app:showAsAction="ifRoom"
+        >
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item android:id="@+id/login"
+                    android:title="登录"
+                    android:icon="@mipmap/ic_overflow"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/regiest"
+                    android:title="注册"
+                    android:icon="@mipmap/ic_overflow"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/setting"
+                    android:title="设置"
+                    android:icon="@mipmap/ic_overflow"
+                    app:showAsAction="ifRoom"
+                    />
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>
