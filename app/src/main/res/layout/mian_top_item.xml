@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mian_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15px">
+    <!--1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/main_mp"
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_weight="1"
+            android:background="@drawable/tick_bg"
+            android:textSize="@dimen/t_size"
+            android:padding="45px"
+            android:text="android"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mp_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tick_bg"
+                android:gravity="center"
+                android:textSize="@dimen/t_size"
+                android:padding="30px"
+                android:text="java"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/mp_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/tick_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="C++"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mp_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tick_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:text="php"
+                android:textSize="@dimen/t_size"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/mp_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/tick_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="python"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5px"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_weight="1"
+            android:background="@drawable/hot_bg"
+            android:textSize="@dimen/t_size"
+            android:padding="45px"
+            android:text="北京"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jd_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hot_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="上海"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/jd_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/hot_bg"
+                android:gravity="center"
+                android:textSize="@dimen/t_size"
+                android:padding="30px"
+                android:text="长沙"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/jd_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/hot_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="深圳"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/jd_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/hot_bg"
+                android:gravity="center"
+                android:textSize="@dimen/t_size"
+                android:padding="30px"
+                android:text="杭州"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5px"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/gentuan_image"
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_weight="1"
+            android:background="@drawable/group_bg"
+            android:textSize="@dimen/t_size"
+            android:padding="45px"
+            android:text="看"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:textSize="@dimen/t_size"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gt_one"
+                android:layout_width="match_parent"
+                android:layout_height="262px"
+                android:layout_weight="1"
+                android:background="@drawable/group_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="酒店"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/gt_two"
+                android:layout_width="match_parent"
+                android:layout_height="262px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/group_bg"
+                android:textSize="@dimen/t_size"
+                android:gravity="center"
+                android:padding="30px"
+                android:text="周边"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="262px"
+            android:layout_marginLeft="5px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gt_three"
+                android:layout_width="match_parent"
+                android:layout_height="262px"
+                android:layout_weight="1"
+                android:background="@drawable/group_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:text="目的"
+                android:textSize="@dimen/t_size"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/gt_four"
+                android:layout_width="match_parent"
+                android:layout_height="262px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/group_bg"
+                android:gravity="center"
+                android:padding="30px"
+                android:textSize="@dimen/t_size"
+                android:text="线路"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

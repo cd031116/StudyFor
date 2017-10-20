@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_search"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff"
+    android:padding="30px">
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="20px"
+        android:drawablePadding="9px"
+        android:drawableRight="@mipmap/down_local"
+        android:gravity="center_vertical"
+        android:text="长沙"
+        android:textSize="32px" />
+
+    <RelativeLayout
+        android:id="@+id/searh_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/address"
+        android:layout_toLeftOf="@+id/line_d"
+        android:background="@drawable/search_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:drawableLeft="@mipmap/search_ss"
+            android:drawablePadding="30px"
+            android:gravity="center_vertical"
+            android:text="输入搜索内容"
+            android:textColor="#666666"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line_d"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="49px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/search_sm" />
+
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="49px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/scan"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/hp_gray_msg" />
+    </RelativeLayout>
+
+</RelativeLayout>

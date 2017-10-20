@@ -30,5 +30,7 @@ dependencies {
     compile 'com.android.support:design:26.+'
     compile 'com.android.support:recyclerview-v7:26.+'
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
     testCompile 'junit:junit:4.12'
 }

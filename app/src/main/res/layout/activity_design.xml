@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_search" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/layoutContentd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_search"
+
+        android:visibility="visible">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <!--
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"-->
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapsingToolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--app:contentScrim="#00000000"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--app:statusBarScrim="#00000000">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_scrollFlags="scroll">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="350px" />
+
+                <include layout="@layout/mian_top_item" />
+            </LinearLayout>
+<!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+            <!--悬浮的部分-->
+            <LinearLayout
+                android:id="@+id/layTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFE4C4"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="tab1"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="tab2"
+                    android:textColor="#333333" />
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <!--主内容-->
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/text" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
