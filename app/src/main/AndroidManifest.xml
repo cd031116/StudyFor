@@ -19,6 +19,15 @@
         <activity android:name=".desgin.DesignActivity" />
         <activity android:name=".desgin.DrawerLayoutActivity" />
         <activity android:name=".desgin.ScrollviewXuanFuActivity"></activity>
+
+
+        <service
+            android:name="t.s.com.appservice.MyService">
+            <intent-filter>
+                <action android:name="t.s.com.appservice" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

@@ -42,4 +42,25 @@
         android:gravity="center"
         android:text="用ScrollView实现滑动悬浮"/>
 
+
+
+    <TextView
+        android:id="@+id/aidls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:text="绑定"/>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="#f0f0f0"
+        android:gravity="center"
+        android:text="调用"/>
 </LinearLayout>
